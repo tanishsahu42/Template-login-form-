@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="box-front">
+                    <h1>LOGIN</h1>
+                   <form >
+                       <input type="email" class="inputbox" name="email" id="email" placeholder="email id">
+                        <input type="password" class="inputbox" name="password" placeholder="enter password">
+                    <button type="submit" class="submit-btn"   >SUBMIT</button>  
+                   <input type="checkbox" class="inputbox" name="" id="ch"><span>remember me</span>
+                    </form>
+                    <button id="nexbtn" onclick="openreg()">I AM NEW HERE</button>
+                </div>
+                <div class="box-back">
+                    <h1>REGISTER</h1>
+                    <form >
+                        <input type="text" class="inputbox" name="input" id="" placeholder="enter name">
+                        <input type="email" class="inputbox" name="email" id="email" placeholder="email id">
+                         <input type="password" class="inputbox" name="password" placeholder="enter password">
+                     <button type="submit" class="submit-btn">SUBMIT</button>  
+                    
+                     </form>
+                     <button id="nexbtn" onclick="openlogin()">I HAVE AN ACCOUNT</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var card=document.getElementById("card");
+    function openreg()
+    {
+        card.style.transform="rotateY(-180deg)";
+    }
+    function openlogin()
+    {
+        card.style.transform="rotateY(0deg)";
+    }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
